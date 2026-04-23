@@ -1,9 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply bg-gray-50 text-gray-900;
-  }
+@theme {
+  --color-sensei-50: #f0f9ff;
+  --color-sensei-100: #e0f2fe;
+  --color-sensei-200: #bae6fd;
+  --color-sensei-500: #0ea5e9;
+  --color-sensei-600: #0284c7;
+  --color-sensei-900: #0c4a6e;
 }
