@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import * as pdfjsLib from 'pdfjs-dist/build/pdf';
-import 'pdfjs-dist/build/pdf.worker.entry';
+import * as pdfjsLib from 'pdfjs-dist';
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
 const PDFViewer = ({ pdfUrl, currentPage, highlightBbox }) => {
   const canvasRef = useRef(null);

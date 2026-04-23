@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+.env
+data/
+qdrant_storage/
+redis_data/
